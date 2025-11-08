@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .lbl{font:14px sans-serif; fill:#111}
+    .ok{fill:#b6f2b6}
+    .warn{fill:#ffe8a6}
+    .alarm{fill:#ffb3b3}
+    .pipe{stroke:#3a3a3a; stroke-width:6; fill:none}
+  </style>
+
+  <!-- Tanque de alimentación -->
+  <rect id="TK_ALIM" x="80" y="400" width="180" height="220" rx="15" ry="15" fill="#e0f2fe" stroke="#0369a1" stroke-width="3"/>
+  <text x="100" y="390" class="lbl">Tanque Alim</text>
+  <!-- Nivel -->
+  <rect id="NIV_TK_OSM" x="100" y="410" width="30" height="190" fill="#7dd3fc" stroke="#0284c7" stroke-width="2"/>
+
+  <!-- Bomba de alta presión -->
+  <circle id="BOMBA_ALTA" cx="370" cy="520" r="40" fill="#e5e7eb" stroke="#111827" stroke-width="3"/>
+  <text x="320" y="580" class="lbl">Bomba Alta</text>
+
+  <!-- Membranas RO -->
+  <rect id="MEMBRANA_RO" x="520" y="470" width="200" height="100" rx="15" ry="15" fill="#f3f4f6" stroke="#4b5563" stroke-width="3"/>
+  <text x="570" y="460" class="lbl">Membrana RO</text>
+
+  <!-- Tanque de permeado -->
+  <rect id="TK_PERM" x="850" y="400" width="180" height="220" rx="15" ry="15" fill="#e0f2fe" stroke="#0369a1" stroke-width="3"/>
+  <text x="870" y="390" class="lbl">Tanque Permeado</text>
+
+  <!-- Válvulas -->
+  <polygon id="VALV_ALIM" points="270,520 290,500 290,540" fill="#d1d5db" stroke="#111827" stroke-width="3"/>
+  <polygon id="VALV_CONC" points="750,520 770,500 770,540" fill="#d1d5db" stroke="#111827" stroke-width="3"/>
+  <polygon id="VALV_PERM" points="1050,520 1070,500 1070,540" fill="#d1d5db" stroke="#111827" stroke-width="3"/>
+
+  <!-- Tuberías -->
+  <path class="pipe" d="M260 520 H330"/>
+  <path class="pipe" d="M410 520 H520"/>
+  <path class="pipe" d="M720 520 H850"/>
+  <path class="pipe" d="M1030 520 H1150"/>
+
+  <!-- Sensores / Medidores -->
+  <rect id="P_ALTA" x="440" y="600" width="80" height="30" class="ok" stroke="#111827" stroke-width="2"/>
+  <text x="448" y="622" class="lbl">P alta</text>
+
+  <rect id="Q_PERMEADO" x="890" y="350" width="100" height="30" class="ok" stroke="#111827" stroke-width="2"/>
+  <text x="898" y="372" class="lbl">Q perm</text>
+
+  <rect id="COND_PERM" x="890" y="310" width="120" height="30" class="ok" stroke="#111827" stroke-width="2"/>
+  <text x="898" y="332" class="lbl">Cond perm</text>
+
+  <rect id="T_ALIM" x="120" y="630" width="100" height="30" class="ok" stroke="#111827" stroke-width="2"/>
+  <text x="128" y="652" class="lbl">Temp alim</text>
+</svg>
